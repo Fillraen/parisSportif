@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/Fillraen/NicolasTrehou/blob/main/github-header-image.png" alt="Bannière Nicolas Trehou">
+</p>
+
 # Bet1Max - Application de Paris Sportifs
 
 ## 🏈 À propos de Bet1Max
@@ -9,17 +13,6 @@ Bet1Max est une application de paris sportifs dédiée au football, permettant a
 - **Gestion de la Balance** : Gérez votre solde de paris sportifs.
 - **Authentification Sécurisée** : Connexion sécurisée pour tous les utilisateurs.
 - **Administration** : Gestion des utilisateurs pour les administrateurs.
-
-## 📸 Captures d'écran
-- `ParisSportifLoginPage.png`
-- `ParisSportifDashboard.png`
-- `ParisSportifHomePage.png`
-- `ParisSportifListeMatch.png`
-- `ParisSportifListeMatchBet.png`
-- `ParisSportifListeMatchDETAIL.png`
-- `ParisSportifUserData.png`
-- `ParisSportifViewBets.png`
-- `ParisSportifViewWiningLooseBets.png`
 
 ## 👥 Répartition des Tâches
 
@@ -46,3 +39,34 @@ Bet1Max est une application de paris sportifs dédiée au football, permettant a
 - Gestion de la balance utilisateur.
 - Gestion administrative des utilisateurs.
 - Optimisation de la navigation et du temps de chargement.
+
+## 📸 Captures d'écran
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSporetifLoginPage.png" alt="ParisSportifLoginPage">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifDashboard.png" alt="ParisSportifDashboard">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifHomePage.png" alt="ParisSportifHomePage">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifListeMatch.png" alt="ParisSportifListeMatch">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifListeMatchBet.png" alt="ParisSportifListeMatchBet">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifListeMatchDETAIL.png" alt="ParisSportifListeMatchDETAIL">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifUserData.png" alt="ParisSportifUserData">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifViewBets.png" alt="ParisSportifViewBets">
+</p>
+<p align="center">
+  <img src="https://github.com/Fillraen/parisSportif/blob/main/ParisSportifViewWiningLooseBets.png" alt="ParisSportifViewWiningLooseBets">
+</p>
+
+
