@@ -12,7 +12,7 @@ namespace SouliereTrehou_parisSportif.Service.bet
         public string season { get; set; }
         
         string result;
-        const string apiKey = "8539c8c6498047eeff3acde12c9dadc0";
+        const string apiKey = "APIKEY";
 
         public GetFootData()
         {
