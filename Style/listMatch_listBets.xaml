@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+                    
+    <Style TargetType="Grid" x:Key="GR_listMatchs">
+        <Setter Property="Background" Value="#1e1e1e"/>
+    </Style>
+
+    <Style TargetType="materialDesign:Card" x:Key="MaterialDesignCard_listBets">
+        <Setter Property="Background" Value="#1e1e1e"/>
+        <Setter Property="Margin" Value="25,0, 0,0"/>
+    </Style>
+</ResourceDictionary>

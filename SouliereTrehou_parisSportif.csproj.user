@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ParisSportif.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\uc_admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\uc_home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\uc_match.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\user\uc_user_allBets.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ParisSportif.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\listMatch_listBets.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\navigationRail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\ParisSportifDict.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\userListBets.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\uc_admin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\uc_home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\uc_match.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\user\uc_user_allBets.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

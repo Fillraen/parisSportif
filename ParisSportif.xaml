@@ -1,0 +1,89 @@
+﻿<Window x:Class="SouliereTrehou_parisSportif.ParisSportif"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SouliereTrehou_parisSportif"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+
+        Title="Paris Sportif" Height="750" Width="1250">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.45*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#1e1e1e" Orientation="Horizontal">
+            <Menu HorizontalAlignment="Left" VerticalAlignment="Center">
+                <MenuItem Click="btnNavClick" Name="MenuItemHome" Margin="0,0,75,0">
+                    <MenuItem.Header>
+                        <StackPanel Orientation="Horizontal" Style="{DynamicResource MenuItemSet }">
+                            <materialDesign:PackIcon Kind="DnsOutline" Style="{StaticResource LogoApp}"/>
+                            <TextBlock Text="Bet1Max" Style="{DynamicResource MenuItemTb}"/>
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Click="btnNavClick" Name="MenuItemMatchs">
+                    <MenuItem.Header>
+                        <StackPanel Orientation="Horizontal" Style="{DynamicResource MenuItemSet }">
+                            <materialDesign:PackIcon Kind="Soccer" Style="{StaticResource LogoHeader}"/>
+                            <TextBlock Text="Football" Style="{DynamicResource MenuItemTb}"/>
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+                <MenuItem Click="btnNavClick" Name="MenuItemAdmin" Visibility="Visible">
+                    <MenuItem.Header>
+                        <StackPanel Orientation="Horizontal" Style="{DynamicResource MenuItemSet }">
+                            <materialDesign:PackIcon Kind="Administrator" Style="{StaticResource LogoHeader}"/>
+                            <TextBlock Text="Administrator" Style="{DynamicResource MenuItemTb}"/>
+                        </StackPanel>
+                    </MenuItem.Header>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,0">
+            <StackPanel Orientation="Horizontal" Style="{DynamicResource MenuItemSet }">
+                <materialDesign:PackIcon Kind="AccountBalance" Style="{StaticResource LogoHeader}"/>
+                <TextBlock Name="TB_Balance" Style="{DynamicResource MenuItemTb}" />
+            </StackPanel>
+            <Menu>
+                <MenuItem Name="MenuItemUser" HorizontalAlignment="Right" Margin="10">
+                    <MenuItem.Header>
+                        <StackPanel Orientation="Horizontal" Style="{DynamicResource MenuItemSet }">
+                            <materialDesign:PackIcon Kind="User" Style="{StaticResource LogoHeader}"/>
+                            <TextBlock Name="TB_Pseudo" Style="{DynamicResource MenuItemTb}"/>
+                        </StackPanel>
+                    </MenuItem.Header>
+                    <MenuItem Header="Voir mes informations" Click="btnNavClick"  Name="MenuItemMyData"/>
+                    <MenuItem Header="Mes paris" Click="btnNavClick" Name="MenuItemMyBets"/>
+                </MenuItem>
+            </Menu>
+            <Button Click="logOutClick"
+                    Height="35"
+                    Width="35"
+                    HorizontalAlignment="Right"
+                    Style="{StaticResource MaterialDesignIconButton}"
+                    Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" Cursor="Hand">
+                <materialDesign:PackIcon Kind="Close" />
+            </Button>
+        </StackPanel>
+        <Grid x:Name="Container" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0">
+
+        </Grid>
+
+    </Grid>
+
+</Window>

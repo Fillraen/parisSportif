@@ -1,0 +1,242 @@
+﻿<UserControl x:Class="SouliereTrehou_parisSportif.View.uc_admin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SouliereTrehou_parisSportif.View"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="709" d:DesignWidth="1250">
+    <Grid>
+        <materialDesign:Card>
+            <TabControl VerticalContentAlignment="Top" materialDesign:ColorZoneAssist.Mode="PrimaryMid" Style="{StaticResource MaterialDesignNavigationRailTabControl}" Name="tabControl">
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon Style="{StaticResource navigationRail-icon}" Kind="Edit" />
+                            <TextBlock HorizontalAlignment="Center" Text="Edit users" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <DataGrid Grid.Column="0" AutoGenerateColumns="False" CanUserAddRows="False" SelectionUnit="Cell" SelectionMode="Extended" ItemsSource="{Binding ListUsers}" Name="DG_listUsers">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Id" Binding="{Binding id}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Username" Binding="{Binding name}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Email" Binding="{Binding email}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Permission" Binding="{Binding permission}" IsReadOnly="True"/>     
+                                    <DataGridTextColumn Header="Balance" Binding="{Binding balance, StringFormat=$ {0}}" IsReadOnly="True"/>     
+                                    <DataGridTemplateColumn Header="Edit" IsReadOnly="True">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Click="editUser">
+                                                   <materialDesign:PackIcon Kind="Edit"/>
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>                            
+                                    <DataGridTemplateColumn Header="Supprimer" IsReadOnly="True">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Click="deleteUser">
+                                                   <materialDesign:PackIcon Kind="Delete"/>
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <StackPanel Grid.Column="1" Margin="15" Name="SP_addUser">
+                                <Label Style="{StaticResource MaterialDesignLabel}" HorizontalAlignment="Center" Name="LB_editId">Id Utilisateur</Label>
+                                <TextBox Name="TB_editUsername" VerticalAlignment="Center" Margin="10" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignOutlinedTextBox}"> <materialDesign:HintAssist.Hint>
+                                        <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                            <materialDesign:PackIcon Kind="User"/>
+                                            <TextBlock Text="Identifiant"/>
+                                        </StackPanel>
+                                    </materialDesign:HintAssist.Hint>
+                                </TextBox>
+                                <TextBox Name="TB_editEmail" VerticalAlignment="Center" Margin="10" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                                    <materialDesign:HintAssist.Hint>
+                                        <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                            <materialDesign:PackIcon Kind="Email"/>
+                                            <TextBlock Text="Email"/>
+                                        </StackPanel>
+                                    </materialDesign:HintAssist.Hint>
+                                </TextBox>
+                                <TextBox Name="TB_editBalance" VerticalAlignment="Center" Margin="10" materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                                    <materialDesign:HintAssist.Hint>
+                                        <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                            <materialDesign:PackIcon Kind="AccountBalance"/>
+                                            <TextBlock Text="Balance"/>
+                                        </StackPanel>
+                                    </materialDesign:HintAssist.Hint>
+                                </TextBox>
+                                <ComboBox Name="CB_editPerm" Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="10" materialDesign:HintAssist.Hint="Permission" materialDesign:HintAssist.HelperText="Permission">
+                                    <ComboBoxItem Content="User" />
+                                    <ComboBoxItem Content="Admin" />
+                                </ComboBox>
+                                <StackPanel>
+                                  <CheckBox x:Name="MaterialDesignOutlinedPasswordBoxEnabledComboBox" Content="Changer le mot de passe" Margin="10"/>
+                                  <PasswordBox Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" 
+                                               Margin="10"
+                                               Name="PB_editPassword"
+                                               VerticalAlignment="Top" 
+                                               materialDesign:TextFieldAssist.HasClearButton="True"
+                                               IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedPasswordBoxEnabledComboBox}">
+                                                                          <materialDesign:HintAssist.Hint>
+                                        <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                            <materialDesign:PackIcon Kind="Password"/>
+                                            <TextBlock Text="Mot de passe"/>
+                                        </StackPanel>
+                                    </materialDesign:HintAssist.Hint>
+                                  </PasswordBox>
+                                </StackPanel>
+                                <Button Click="editUserSubmit" Style="{StaticResource MaterialDesignRaisedButton}" Margin="10">Modifier</Button>
+                            </StackPanel>       
+                        </Grid>
+                    </TextBlock>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon Style="{StaticResource navigationRail-icon}" Kind="Add" />
+                            <TextBlock HorizontalAlignment="Center" Text="Add users" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock>
+                        <StackPanel>
+                            <TextBox Name="TB_username"
+                                     VerticalAlignment="Center"
+                                     Margin="10"
+                                     materialDesign:TextFieldAssist.HasClearButton="True"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                                <materialDesign:HintAssist.Hint>
+                                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                        <materialDesign:PackIcon Kind="User"/>
+                                        <TextBlock Text="Identifiant"/>
+                                    </StackPanel>
+                                </materialDesign:HintAssist.Hint>
+                            </TextBox>
+                            <TextBox Name="TB_email"
+                                     VerticalAlignment="Center"
+                                     Margin="10"
+                                     materialDesign:TextFieldAssist.HasClearButton="True"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                                 <materialDesign:HintAssist.Hint>
+                                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                        <materialDesign:PackIcon Kind="Email"/>
+                                        <TextBlock Text="Email"/>
+                                    </StackPanel>
+                                </materialDesign:HintAssist.Hint>
+                            </TextBox>
+                            <ComboBox Name="CB_Perm"
+                                      Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                                      Margin="10"
+                                      materialDesign:HintAssist.Hint="Permission"
+                                      materialDesign:HintAssist.HelperText="Permission">
+                              <ComboBoxItem Content="User" />
+                              <ComboBoxItem Content="Admin" />
+                            </ComboBox>
+
+                            <PasswordBox Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}"
+                                         Name="PB_password"
+                                         Margin="10"
+                                         materialDesign:TextFieldAssist.HasClearButton="True">
+                                <materialDesign:HintAssist.Hint>
+                                    <StackPanel Orientation="Horizontal" Margin="-2,0,0,0">
+                                        <materialDesign:PackIcon Kind="Password"/>
+                                        <TextBlock Text="Mot de passe"/>
+                                    </StackPanel>
+                                </materialDesign:HintAssist.Hint>
+                            </PasswordBox>   
+                            <Button Click="addUser" Style="{StaticResource MaterialDesignRaisedButton}" Margin="10">Ajouter</Button>
+                        </StackPanel>                                       
+                    </TextBlock>
+                </TabItem>
+                <TabItem IsEnabled="True">
+                    <TabItem.Header>
+                        <StackPanel Width="auto" Height="auto">
+                            <materialDesign:PackIcon Style="{StaticResource navigationRail-icon}" Kind="Settings" />
+                            <TextBlock HorizontalAlignment="Center" Text="Settings" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock HorizontalAlignment="Center">
+                        <TextBlock Height="2000">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>  
+                                    <RowDefinition Height="*"/> 
+                                    <RowDefinition Height="*"/> 
+                                    <RowDefinition Height="*"/>  
+                                    <RowDefinition Height="*"/> 
+                                    <RowDefinition Height="*"/>  
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>          
+                                <Grid Grid.Row="1">
+                                    <Label Content="(update after restarting the application)" HorizontalAlignment="Center"/>
+                                </Grid>  
+                                <Grid Grid.Row="0">
+                                    <Label Content="Number of days for the appearance of the match" HorizontalAlignment="Center"/>
+                                </Grid>                            
+                                <Grid Grid.Row="2">
+                                    <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="0">
+                                        <RadioButton Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Click="btn_day_Click" Name="btn_day_1">
+                                            <StackPanel>
+                                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="One" />
+                                                <TextBlock Margin="0 4 0 0" Text="FIRST" />
+                                            </StackPanel>
+                                        </RadioButton>                              
+                                        <RadioButton Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Click="btn_day_Click" Name="btn_day_2">
+                                            <StackPanel>
+                                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Two" /> 
+                                                <TextBlock Margin="0 4 0 0" Text="SECOND" />
+                                            </StackPanel>
+                                        </RadioButton>                              
+                                        <RadioButton Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Click="btn_day_Click" Name="btn_day_3">
+                                            <StackPanel>
+                                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Three" />
+                                                <TextBlock Margin="0 4 0 0" Text="THIRD" />
+                                            </StackPanel>
+                                        </RadioButton>                                
+                                        <RadioButton Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Click="btn_day_Click" Name="btn_day_4">
+                                            <StackPanel>
+                                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Four" />
+                                                <TextBlock Margin="0 4 0 0" Text="FOURTH" />
+                                            </StackPanel>
+                                        </RadioButton>                                
+                                        <RadioButton Style="{StaticResource MaterialDesignTabRadioButton}" Margin="4" IsChecked="False" Click="btn_day_Click" Name="btn_day_5">
+                                            <StackPanel>
+                                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Five" /> 
+                                                <TextBlock Margin="0 4 0 0" Text="FIFTH" />
+                                            </StackPanel>
+                                        </RadioButton>
+                                    </StackPanel>
+                                </Grid>             
+                                <Grid Grid.Row="3">
+                                    <Label Content="bookmaker chosen" HorizontalAlignment="Center"/>
+                                </Grid>
+                                <Grid Grid.Row="4">
+                                    <ComboBox Name="Cb_bookmakers" SelectionChanged="Cb_Bookmaker_SelectionChanged" Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="bookmaker" Width="256">
+                                        <ComboBoxItem Content="0" />
+                                    </ComboBox>
+                                </Grid>
+                            </Grid>
+                        </TextBlock>
+                    </TextBlock>
+                </TabItem>
+            </TabControl>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

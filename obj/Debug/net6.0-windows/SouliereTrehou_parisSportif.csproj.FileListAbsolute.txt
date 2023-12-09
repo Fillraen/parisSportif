@@ -1,0 +1,129 @@
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.exe
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll.config
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.deps.json
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.runtimeconfig.json
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.AssemblyReference.cache
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\Menu.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\navigationRail.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.g.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.cache
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.lref
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.baml
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.g.resources
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.GeneratedMSBuildEditorConfig.editorconfig
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfoInputs.cache
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfo.cs
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CoreCompileInputs.cache
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CopyComplete
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\refint\SouliereTrehou_parisSportif.dll
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.genruntimeconfig.cache
+D:\0_nTrehou\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ref\SouliereTrehou_parisSportif.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.exe
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll.config
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.deps.json
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.runtimeconfig.json
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.AssemblyReference.cache
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\Menu.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\navigationRail.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_data.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.g.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.cache
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.lref
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_data.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.g.resources
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.GeneratedMSBuildEditorConfig.editorconfig
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfoInputs.cache
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfo.cs
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CoreCompileInputs.cache
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CopyComplete
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\refint\SouliereTrehou_parisSportif.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.genruntimeconfig.cache
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ref\SouliereTrehou_parisSportif.dll
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\listMatch_listBets.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\LoginPage.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\ParisSportifDict.baml
+D:\0_aaa\c#\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\userListBets.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.exe
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll.config
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.deps.json
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.runtimeconfig.json
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.AssemblyReference.cache
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\listMatch_listBets.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\LoginPage.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\Menu.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\navigationRail.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\ParisSportifDict.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\Style\userListBets.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_data.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.cache
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif_MarkupCompile.lref
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\App.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ParisSportif.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_admin.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_home.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\uc_match.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_allBets.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\View\user\uc_user_data.baml
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.g.resources
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfoInputs.cache
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.AssemblyInfo.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CoreCompileInputs.cache
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.csproj.CopyComplete
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\refint\SouliereTrehou_parisSportif.dll
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.pdb
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\SouliereTrehou_parisSportif.genruntimeconfig.cache
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\ref\SouliereTrehou_parisSportif.dll

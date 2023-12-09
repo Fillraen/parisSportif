@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\bdd\bet.json" />
+    <None Remove="Resource\bdd\user.json" />
+    <None Remove="Resource\Image\background\loginBg.jpg" />
+    <None Remove="Resource\Image\home.png" />
+    <None Remove="Resource\Image\iconTest1.png" />
+    <None Remove="Resource\Image\iconTest2.png" />
+    <None Remove="Resource\Image\iconTest3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\bdd\bet.json" />
+    <Resource Include="Resource\bdd\user.json" />
+    <Resource Include="Resource\Image\background\loginBg.jpg" />
+    <Resource Include="Resource\Image\home.png" />
+    <Resource Include="Resource\Image\iconTest1.png" />
+    <Resource Include="Resource\Image\iconTest2.png" />
+    <Resource Include="Resource\Image\iconTest3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resource\DataMatchs\" />
+  </ItemGroup>
+
+</Project>

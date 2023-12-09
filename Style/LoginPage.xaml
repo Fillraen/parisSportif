@@ -1,0 +1,30 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Style TargetType="Image" x:Key="LogoHome">
+        <Setter Property="Stretch" Value="UniformToFill"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="100"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Margin" Value="20"/>
+    </Style>
+
+    <Style TargetType="Rectangle" x:Key="RectangleFieldInput">
+        <Setter Property="Width" Value="280"/>
+        <Setter Property="Height" Value="240"/>
+        <Setter Property="Fill" Value="#1e1e1e"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,100"/>
+        <Setter Property="RadiusX" Value="10"/>
+        <Setter Property="RadiusY" Value="10"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="TitleLogin">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="Gray"/>
+    </Style>
+
+</ResourceDictionary>

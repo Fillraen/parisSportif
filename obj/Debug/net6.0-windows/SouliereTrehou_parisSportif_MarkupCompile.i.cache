@@ -1,0 +1,20 @@
+﻿SouliereTrehou_parisSportif
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\obj\Debug\net6.0-windows\
+SouliereTrehou_parisSportif
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\NTAer\Downloads\Projet Bet1Max\SouliereTrehou_parisSportif\App.xaml
+131177979459
+
+241860702508
+197706195111
+MainWindow.xaml;ParisSportif.xaml;Style\listMatch_listBets.xaml;Style\LoginPage.xaml;Style\Menu.xaml;Style\navigationRail.xaml;Style\ParisSportifDict.xaml;Style\userListBets.xaml;View\uc_admin.xaml;View\uc_home.xaml;View\uc_match.xaml;View\user\uc_user_allBets.xaml;View\user\uc_user_data.xaml;
+
+False
+

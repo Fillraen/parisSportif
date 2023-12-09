@@ -1,0 +1,342 @@
+﻿<UserControl x:Class="SouliereTrehou_parisSportif.View.user.uc_user_allBets"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SouliereTrehou_parisSportif.View.user"
+             mc:Ignorable="d" 
+             
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="709" d:DesignWidth="1250">
+    <Grid>
+        <materialDesign:Card>
+            <TabControl VerticalContentAlignment="Top" materialDesign:ColorZoneAssist.Mode="PrimaryMid" Style="{StaticResource MaterialDesignNavigationRailTabControl}">
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel>
+                            <TextBlock HorizontalAlignment="Center" Text="En cours" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock>
+                        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False"  SelectionUnit="Cell" SelectionMode="Extended" ItemsSource="{Binding betsInProgress}">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="Liste de vos paris en cours">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <materialDesign:Card Style="{StaticResource CardDataTemplateFullWindow}">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.8*"/>
+                                                        <RowDefinition Height="0.4*"/>
+                                                        <RowDefinition Height="0.5*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!-- Row 1 for league info and match start data-->
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="0.2*"/>
+                                                            <ColumnDefinition Width="0.3*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Image Grid.Column="0" Source="{Binding leagueLogo}" Style="{StaticResource IconLeague}"/>
+                                                        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                                                            <TextBlock Text="{Binding league}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                            <DatePicker SelectedDate="{Binding dateDay}" SelectedDateFormat="Long" IsEnabled="False" Margin="10" FontSize="16"/>
+                                                            <materialDesign:TimePicker Style="{StaticResource TimeStartMatch}" SelectedTime="{Binding dateHour}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 1 -->
+
+                                                    <!-- Row 2 data from match-->
+                                                    <Grid Grid.Row="1">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <Image Source="{Binding logoTeamHome}" Style="{StaticResource IconTeam}"/>
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamHome}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip  Grid.Column="1" Content="{Binding finalScore}" HorizontalAlignment="Center" Background="#3e3e3e" />
+
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamAway}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <Image Source="{Binding logoTeamAway}" Style="{StaticResource IconTeam}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 2 -->
+
+                                                    <!-- Row 3 data from bet-->
+                                                    <Grid Grid.Row="2">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3">
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding userBetTheme}" />
+                                                                <Run Text=" :  " />
+                                                            </TextBlock>
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Text="{Binding userBet}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <TextBlock VerticalAlignment="Center" Text="Mise : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding bet}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip Grid.Row="1" Grid.Column="1" Content="{Binding statusBet}" Style="{StaticResource MaterialDesignChip}"/>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="Gains : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding gain}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 3 -->
+                                                </Grid>    
+                                            </materialDesign:Card>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TextBlock>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel>
+                            <TextBlock HorizontalAlignment="Center" Text="Gagnés" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock>
+                        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False"  SelectionUnit="Cell" SelectionMode="Extended" ItemsSource="{Binding betsWins}">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="Liste de vos paris gagnés">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <materialDesign:Card Style="{StaticResource CardDataTemplateFullWindow}">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.8*"/>
+                                                        <RowDefinition Height="0.4*"/>
+                                                        <RowDefinition Height="0.5*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!-- Row 1 for league info and match start data-->
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="0.2*"/>
+                                                            <ColumnDefinition Width="0.3*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Image Grid.Column="0" Source="{Binding leagueLogo}" Style="{StaticResource IconLeague}"/>
+                                                        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                                                            <TextBlock Text="{Binding league}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                            <DatePicker SelectedDate="{Binding dateDay}" SelectedDateFormat="Long" IsEnabled="False" Margin="10" FontSize="16"/>
+                                                            <materialDesign:TimePicker Style="{StaticResource TimeStartMatch}" SelectedTime="{Binding dateHour}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 1 -->
+
+                                                    <!-- Row 2 data from match-->
+                                                    <Grid Grid.Row="1">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <Image Source="{Binding logoTeamHome}" Style="{StaticResource IconTeam}"/>
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamHome}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip  Grid.Column="1" Content="{Binding finalScore}" HorizontalAlignment="Center" Background="#3e3e3e" />
+
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamAway}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <Image Source="{Binding logoTeamAway}" Style="{StaticResource IconTeam}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 2 -->
+
+                                                    <!-- Row 3 data from bet-->
+                                                    <Grid Grid.Row="2">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3">
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding userBetTheme}" />
+                                                                <Run Text=" :  " />
+                                                            </TextBlock>
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Text="{Binding userBet}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <TextBlock VerticalAlignment="Center" Text="Mise : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding bet}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip Grid.Row="1" Grid.Column="1" Content="{Binding statusBet}" Style="{StaticResource MaterialDesignChip}"/>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="Gains : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding gain}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 3 -->
+                                                </Grid>    
+                                            </materialDesign:Card>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TextBlock>
+                </TabItem>
+                <TabItem IsEnabled="True">
+                    <TabItem.Header>
+                        <StackPanel>
+                            <TextBlock HorizontalAlignment="Center" Text="Tous"/>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TextBlock>
+                        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False"  SelectionUnit="Cell" SelectionMode="Extended" ItemsSource="{Binding betsList}">
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn Header="Liste de tous vos paris">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <materialDesign:Card Style="{StaticResource CardDataTemplateFullWindow}">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="0.8*"/>
+                                                        <RowDefinition Height="0.4*"/>
+                                                        <RowDefinition Height="0.5*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <!-- Row 1 for league info and match start data-->
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="0.2*"/>
+                                                            <ColumnDefinition Width="0.3*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Image Grid.Column="0" Source="{Binding leagueLogo}" Style="{StaticResource IconLeague}"/>
+                                                        <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                                                            <TextBlock Text="{Binding league}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                            <DatePicker SelectedDate="{Binding dateDay}" SelectedDateFormat="Long" IsEnabled="False" Margin="10" FontSize="16"/>
+                                                            <materialDesign:TimePicker Style="{StaticResource TimeStartMatch}" SelectedTime="{Binding dateHour}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 1 -->
+
+                                                    <!-- Row 2 data from match-->
+                                                    <Grid Grid.Row="1">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <Image Source="{Binding logoTeamHome}" Style="{StaticResource IconTeam}"/>
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamHome}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip  Grid.Column="1" Content="{Binding finalScore}" HorizontalAlignment="Center" Background="#3e3e3e" />
+
+                                                        <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="{Binding teamAway}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <Image Source="{Binding logoTeamAway}" Style="{StaticResource IconTeam}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 2 -->
+
+                                                    <!-- Row 3 data from bet-->
+                                                    <Grid Grid.Row="2">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="0.5*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3">
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding userBetTheme}" />
+                                                                <Run Text=" :  " />
+                                                            </TextBlock>
+                                                            <TextBlock VerticalAlignment="Center" Margin="10,0" Text="{Binding userBet}" Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                        </StackPanel>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Margin="50,0,0,0" MaxWidth="600" HorizontalAlignment="Left">
+                                                            <TextBlock VerticalAlignment="Center" Text="Mise : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding bet}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+
+                                                        <materialDesign:Chip Grid.Row="1" Grid.Column="1" Content="{Binding statusBet}" Style="{StaticResource MaterialDesignChip}"/>
+
+                                                        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal" Margin="0,0,50,0" HorizontalAlignment="Right">
+                                                            <TextBlock VerticalAlignment="Center" Text="Gains : " Style="{StaticResource MaterialDesignBody1TextBlock}" />
+                                                            <TextBlock VerticalAlignment="Center" Style="{StaticResource MaterialDesignBody1TextBlock}">
+                                                                <Run Text="{Binding gain}"/>
+                                                                <Run Text=" €"/>
+                                                            </TextBlock>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                    <!-- END Row 3 -->
+                                                </Grid>    
+                                            </materialDesign:Card>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TextBlock>
+                </TabItem>
+            </TabControl>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>
